@@ -1,0 +1,26 @@
+{
+  "name": "leadflow-crm",
+  "version": "1.0.0",
+  "description": "Full-stack CRM for managing client leads from website contact forms",
+  "scripts": {
+    "server": "node server.js",
+    "dev:server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run dev:server\" \"npm run client\"",
+    "seed": "node scripts/seed.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.3.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1"
+  }
+}
